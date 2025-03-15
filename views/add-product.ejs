@@ -1,0 +1,43 @@
+<h1 class="mb-4">Add New Product</h1>
+
+<div class="card">
+  <div class="card-body">
+    <form action="/add-product" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <div class="form-text">Enter a descriptive name for the product</div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="url" class="form-label">Product URL</label>
+        <input type="url" class="form-control" id="url" name="url" required>
+        <div class="form-text">Enter the full URL of the product page</div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="selector" class="form-label">Price Selector</label>
+        <input type="text" class="form-control" id="selector" name="selector" required>
+        <div class="form-text">
+          Enter a CSS selector that targets the price element on the page.<br>
+          Examples: <code>.price</code>, <code>#product-price</code>, <code>span.current-price</code>
+        </div>
+      </div>
+      
+      <div class="alert alert-info">
+        <h5>How to find the price selector:</h5>
+        <ol>
+          <li>Visit the product page in your browser</li>
+          <li>Right-click on the price and select "Inspect" or "Inspect Element"</li>
+          <li>Look at the HTML element that contains the price</li>
+          <li>Create a CSS selector that uniquely identifies this element</li>
+        </ol>
+      </div>
+      
+      <div class="d-flex justify-content-between">
+        <a href="/" class="btn btn-outline-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+      </div>
+    </form>
+  </div>
+</div>

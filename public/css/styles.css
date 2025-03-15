@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Tables */
+.table th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+/* Forms */
+.form-label {
+  font-weight: 500;
+}
+
+/* Price Display */
+.price-up {
+  color: #28a745;
+}
+
+.price-down {
+  color: #dc3545;
+}
+
+.price-same {
+  color: #6c757d;
+}
+
+/* Buttons in forms that are inline */
+form.d-inline {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e9ecef;
+  margin-top: 3rem;
+}
+
+/* Chart container */
+canvas#priceChart {
+  width: 100% !important;
+  height: 300px !important;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-group .btn {
+    margin-bottom: 5px;
+  }
+  
+  form.d-inline {
+    display: block;
+    margin: 5px 0;
+  }
+}
