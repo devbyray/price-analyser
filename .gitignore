@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # Database files
-data/
+# data/
 
 # Logs
 logs
